@@ -1,36 +1,97 @@
 <template>
   <section class="project">
-    <h2 class="project__title">Weather Application</h2>
-    <article class="project__container">
-      <div class="project__display">
-        <img
-          src="~/assets/project1_image.png"
-          alt="Image showing a simple weather application using Openweathermap API"
-        />
+    <h2 class="project__title">{{ title }}</h2>
+    <article
+      :class="[
+        'project__container',
+        alternate ? 'project__container--alternate' : '',
+      ]"
+    >
+      <div
+        :class="[
+          'project__display',
+          alternate ? 'project__display--alternate' : '',
+        ]"
+      >
+        <img :src="require(`@/assets/${image.src}`)" :alt="image.alt" />
       </div>
-      <div class="project__description">
-        <p>
-          I used this application in order to practice animating SVG images. The
-          application utilizes openweathermap API to provide accurate weather
-          conditions. the front-end vue application renders different animated
-          illustration based on the weather.
-        </p>
-        <div class="project__tags">
+      <div
+        :class="[
+          'project__description',
+          alternate ? 'project__description--alternate' : '',
+        ]"
+      >
+        <transition name="slide">
+          <p>
+            {{ description }}
+          </p>
+        </transition>
+        <div
+          :class="[
+            'project__tags',
+            alternate ? 'project__tags--alternate' : '',
+          ]"
+        >
           <ul>
-            <li>Vue</li>
-            <li>SaaS</li>
-            <li>SVG</li>
+            <li v-for="tag in tags" :key="tag">{{ tag }}</li>
           </ul>
         </div>
       </div>
     </article>
   </section>
 </template>
-
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+      required: true,
+    },
+    tags: {
+      type: Array,
+      required: true,
+    },
+    alternate: {
+      type: Boolean,
+      default: false,
+    },
+    image: {
+      type: Object,
+      required: true,
+    },
+  },
+})
+</script>
 <style lang="scss" scoped>
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .project {
   color: var(--primary-color);
   font-family: Montserrat Alternates;
+  margin-bottom: 5rem;
   &__title {
     font-style: normal;
     font-weight: normal;
@@ -40,12 +101,18 @@
 
   &__container {
     display: flex;
+    &--alternate {
+      flex-direction: row-reverse;
+    }
   }
 
   &__display {
     width: 50%;
+    animation: slide-right 1000ms;
+    &--alternate {
+      animation: slide-left 1000ms;
+    }
   }
-
   &__description {
     border-left: 5px solid var(--primary-color);
     width: 50%;
@@ -57,12 +124,22 @@
       font-style: normal;
       font-weight: normal;
       line-height: 3rem;
-      font-size: unquote('clamp(1rem, 2.5vw, 1.7rem)');
+      font-size: unquote('clamp(1.4rem, 2.5vw, 1.7rem)');
       text-align: justify;
       flex-grow: 2;
       margin-block-start: 1em;
       padding-left: 1rem;
       color: var(--alternate-color);
+      animation: slide-left 1000ms;
+    }
+    &--alternate {
+      border-left: none;
+      border-right: 5px solid var(--primary-color);
+      p {
+        padding-left: 0rem;
+        padding-right: 1rem;
+        animation: slide-right 1000ms;
+      }
     }
   }
   &__tags {
@@ -70,7 +147,6 @@
     align-items: flex-end;
     flex-grow: 1;
     ul {
-      list-style: none;
       padding-left: 1rem;
       display: flex;
       flex-wrap: wrap;
@@ -85,6 +161,15 @@
       font-size: unquote('clamp(.8rem, 0.2500rem + 3.3333vw, 1.5rem)');
       border: 2px solid var(--primary-color);
       border-radius: 40px;
+      animation: slide-left 1000ms;
+    }
+    &--alternate {
+      justify-content: flex-end;
+      animation: slide-right 1000ms;
+      ul {
+        padding-left: 0rem;
+        padding-right: 1rem;
+      }
     }
   }
 }
@@ -125,6 +210,13 @@
         width: 7rem;
       }
     }
+  }
+}
+@media only screen and(max-width: 480px) {
+  .project{
+        &__description {
+          width: 80%;
+        }
   }
 }
 </style>

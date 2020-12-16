@@ -1,12 +1,17 @@
 <template>
-  <Nuxt />
+  <div class="main__layout">
+    <Nav></Nav>
+    <Nuxt />
+  </div>
 </template>
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Moul&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: Montserrat Alternates, 'Source Sans Pro', -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -27,5 +32,28 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.main__layout {
+  width: 80vw;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media only screen and(max-width: 480px) {
+  .main__layout {
+    width: 100vw;
+  }
 }
 </style>

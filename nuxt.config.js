@@ -9,7 +9,13 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-
+  // progress bar
+  loading: {
+    color: '#e64467',
+    height: '2px',
+    throttle: 0,
+    continuous: true,
+  },
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [],
 
