@@ -39,14 +39,16 @@ export default Vue.extend({})
       font-style: normal;
       font-weight: normal;
       font-size: unquote('clamp(1.5rem, 3vw, 4rem)');
-      line-height: 2.75rem;
+      line-height: 4.75rem;
       letter-spacing: 0.13em;
       margin-top: -5.5rem;
+      animation: slide-left 1000ms;
     }
     h4 {
       font-size: unquote('clamp(.9rem, 2vw, 2.25rem)');
       line-height: 2.75rem;
       letter-spacing: 0.13em;
+      animation: slide-right 1000ms;
     }
   }
   &__button {
@@ -73,7 +75,7 @@ export default Vue.extend({})
     font-style: normal;
     font-weight: normal;
     font-size: unquote('clamp(1rem, 3.5vw, 3rem)');
-    // letter-spacing: 0.13em;
+    animation: slide-up 1000ms;
   }
 }
 @media only screen and(max-width: 1480px) {
@@ -90,9 +92,12 @@ export default Vue.extend({})
     background-size: 40% 40%;
     &__text {
       justify-content: center;
+      h1{
+        line-height: 2.75rem;
+      }
       h1,
       h4 {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         letter-spacing: 0em;
       }
     }

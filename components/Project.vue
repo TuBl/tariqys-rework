@@ -68,26 +68,7 @@ export default Vue.extend({
 })
 </script>
 <style lang="scss" scoped>
-@keyframes slide-left {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes slide-right {
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+
 .project {
   color: var(--primary-color);
   font-family: Montserrat Alternates;
@@ -213,10 +194,10 @@ export default Vue.extend({
   }
 }
 @media only screen and(max-width: 480px) {
-  .project{
-        &__description {
-          width: 80%;
-        }
+  .project {
+    &__description {
+      width: 80%;
+    }
   }
 }
 </style>
