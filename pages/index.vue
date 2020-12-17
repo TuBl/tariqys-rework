@@ -53,8 +53,8 @@ export default Vue.extend({})
   }
   &__button {
     background: radial-gradient(
-        82.24% 527.68% at 100% 50.25%,
-        #e64467 0%,
+        84.24% 527.68% at 80% 50.25%,
+      #e64467 0%,
         rgba(230, 68, 103, 0) 100%,
         rgba(230, 68, 103, 0.5) 100%
       ),
