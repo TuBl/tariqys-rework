@@ -4,7 +4,7 @@
       <ul>
         <nuxt-link to="/"><li>Home</li></nuxt-link>
         <nuxt-link to="/projects"><li>Projects</li></nuxt-link>
-        <nuxt-link to="/project"><li>Contact</li></nuxt-link>
+        <nuxt-link to="/glass"><li>Glass</li></nuxt-link>
       </ul>
     </nav>
   </header>
@@ -41,7 +41,7 @@ a:active {
 .nuxt-link-exact-active {
   color: var(--primary-color);
 }
-@media only screen and(max-width: 980px) {
+@media only screen and(max-width: 480px) {
   header {
     display: flex;
     justify-content: center;

@@ -20,14 +20,21 @@ export default Vue.extend({})
 
 <style lang="scss" scoped>
 .container {
-  // background: red;
-  width: 80vw;
+  width: 100%;
   height: 80vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #e5e5e5;
   text-align: justify;
+  color: #e5e5e5;
+  &__card {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+  }
   &__text {
     width: 50%;
     height: 100%;
@@ -78,19 +85,13 @@ export default Vue.extend({})
     animation: slide-up 1000ms;
   }
 }
-// @media only screen and(max-width: 1480px) {
-//   .container {
-//     background-position: -50% 50%;
-//     background-size: 70% 70%;
-//   }
-// }
-@media only screen and(max-width: 1480px) {
+@media only screen and(max-width: 1268px) {
   .container {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     &__card {
-      align-self: flex-end;
-      margin-right: -7.5rem;
+      padding-bottom: 9rem;
+      justify-content: flex-end;
     }
     &__text {
       justify-content: center;
@@ -108,32 +109,29 @@ export default Vue.extend({})
     }
   }
 }
-@media only screen and(max-width: 1024px) {
+@media only screen and(max-width: 768px) {
   .container {
+    flex-direction: column;
     &__card {
-      margin-right: -8.5rem;
-    }
-  }
-}
-@media only screen and(max-width: 980px) {
-  .container {
-    width: 100vw;
-    align-items: center;
-    margin-bottom: -5rem;
-    &__card {
-      margin-right: 0;
-      align-self: center;
-      margin-bottom: 3.5rem;
+      padding-bottom: 0rem;
+      align-self: flex-end;
     }
     &__text {
-      text-align: center;
-      h1,
-      h4 {
-        margin-bottom: 1rem;
-        letter-spacing: 0em;
-      }
+      align-self: flex-start;
     }
   }
 }
-
+@media only screen and(max-width: 725px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+    &__card {
+      align-self: center;
+    }
+    &__text {
+      align-self: center;
+      text-align: center;
+    }
+  }
+}
 </style>

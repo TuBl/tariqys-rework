@@ -92,7 +92,7 @@ export default Vue.extend({})
     background-size: 40% 40%;
     &__text {
       justify-content: center;
-      h1{
+      h1 {
         line-height: 2.75rem;
       }
       h1,
