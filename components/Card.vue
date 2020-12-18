@@ -88,14 +88,10 @@ export default {}
       letter-spacing: 0.13em;
     }
     .p2 {
-      margin-bottom: 15%;
+      margin-bottom: 35%;
     }
   }
 }
-// .card:hover {
-//   transform: skew(5deg);
-//   transition: transform 200ms ease-in;
-// }
 @media only screen and(max-width: 1268px) {
   .card {
     height: 350px;

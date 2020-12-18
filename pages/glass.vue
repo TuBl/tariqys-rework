@@ -28,12 +28,11 @@ export default Vue.extend({})
   text-align: justify;
   color: #e5e5e5;
   &__card {
-    height: 100%;
-    width: 50%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding-bottom: 5rem;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100%;
   }
   &__text {
     width: 50%;
