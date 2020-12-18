@@ -172,7 +172,7 @@ export default Vue.extend({
       border-left: none;
       width: 100%;
       border-top: 5px solid var(--primary-color);
-      background: #3b3a3a;
+      border-bottom: 5px solid var(--primary-color);
       border-radius: 40px;
       padding: 1rem;
       justify-content: center;

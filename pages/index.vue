@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <!-- <CardCopy class="container__card"></CardCopy> -->
+    <Card class="container__card"></Card>
     <div class="container__text">
       <h1>
         I Build Amazing <br />
@@ -23,11 +23,17 @@ export default Vue.extend({})
   width: 100%;
   height: 80vh;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  color: #e5e5e5;
   text-align: justify;
-  background: url('~assets/bgcard.svg') no-repeat 0% 50%;
+  color: #e5e5e5;
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100%;
+  }
   &__text {
     width: 50%;
     height: 100%;
@@ -54,7 +60,7 @@ export default Vue.extend({})
   &__button {
     background: radial-gradient(
         84.24% 527.68% at 80% 50.25%,
-      #e64467 0%,
+        #e64467 0%,
         rgba(230, 68, 103, 0) 100%,
         rgba(230, 68, 103, 0.5) 100%
       ),
@@ -78,18 +84,14 @@ export default Vue.extend({})
     animation: slide-up 1000ms;
   }
 }
-@media only screen and(max-width: 1480px) {
-  .container {
-    background-position: -50% 50%;
-    background-size: 70% 70%;
-  }
-}
 @media only screen and(max-width: 1268px) {
   .container {
-    flex-direction: column;
-    align-items: flex-start;
-    background-position: 100% 35%;
-    background-size: 40% 40%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    &__card {
+      padding-bottom: 9rem;
+      justify-content: flex-end;
+    }
     &__text {
       justify-content: center;
       h1 {
@@ -106,22 +108,28 @@ export default Vue.extend({})
     }
   }
 }
-
-@media only screen and(max-width: 480px) {
+@media only screen and(max-width: 768px) {
   .container {
-    width: 100vw;
-    background-position: 50% 0%;
-    background-size: 50% 50%;
-    align-items: center;
-
+    flex-direction: column;
+    &__card {
+      padding-bottom: 0rem;
+      align-self: flex-end;
+    }
     &__text {
-      justify-content: flex-end;
+      align-self: flex-start;
+    }
+  }
+}
+@media only screen and(max-width: 725px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+    &__card {
+      align-self: center;
+    }
+    &__text {
+      align-self: center;
       text-align: center;
-      h1,
-      h4 {
-        margin-bottom: 1rem;
-        letter-spacing: 0em;
-      }
     }
   }
 }

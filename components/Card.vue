@@ -56,7 +56,7 @@ export default {}
     border-radius: 40px;
     mix-blend-mode: overlay;
     z-index: 10;
-    background-image: url('~assets/noiseb.png'),
+    background-image: url('~assets/noise.png'),
       radial-gradient(
         97.27% 97.27% at 0% 2.73%,
         rgba(255, 255, 255, 0.4) 0%,
