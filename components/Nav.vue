@@ -41,7 +41,7 @@ a:active {
 .nuxt-link-exact-active {
   color: var(--primary-color);
 }
-@media only screen and(max-width: 480px) {
+@media only screen and(max-width: 980px) {
   header {
     display: flex;
     justify-content: center;

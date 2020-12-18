@@ -68,7 +68,6 @@ export default Vue.extend({
 })
 </script>
 <style lang="scss" scoped>
-
 .project {
   color: var(--primary-color);
   font-family: Montserrat Alternates;
