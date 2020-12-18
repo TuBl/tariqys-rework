@@ -169,7 +169,7 @@ export default Vue.extend({
       align-items: center;
     }
     &__description {
-      border-left: none;
+      border: none;
       width: 100%;
       border-top: 5px solid var(--primary-color);
       border-bottom: 5px solid var(--primary-color);
