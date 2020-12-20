@@ -100,8 +100,6 @@ export default {
 
 @media only screen and (max-width: 414px) {
   .icon {
-    color: #fffffe;
-    opacity: 0;
     border-radius: 50%;
     padding: 0.07em;
     width: 0.4em;
