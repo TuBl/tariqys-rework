@@ -100,7 +100,7 @@ export default {}
 }
 @media only screen and(max-width: 480px) {
   .card {
-    height: 300px;
+    height: 250px;
     &__overlay {
       width: 80%;
     }
