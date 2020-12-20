@@ -7,14 +7,17 @@
         alternate ? 'project__container--alternate' : '',
       ]"
     >
-      <div
-        :class="[
-          'project__display',
-          alternate ? 'project__display--alternate' : '',
-        ]"
-      >
-        <img :src="require(`@/assets/${image.src}`)" :alt="image.alt" />
-      </div>
+      <a :href="slug" target="_blank" rel="nonereferrer">
+        <div
+          :class="[
+            'project__display',
+            alternate ? 'project__display--alternate' : '',
+          ]"
+        >
+          <img :src="require(`@/assets/${image.src}`)" :alt="image.alt" />
+        </div>
+      </a>
+
       <div
         :class="[
           'project__description',
@@ -64,10 +67,20 @@ export default Vue.extend({
       type: Object,
       required: true,
     },
+    slug: {
+      type: String,
+      required: true,
+    },
   },
 })
 </script>
 <style lang="scss" scoped>
+a {
+  height: auto;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
 .project {
   color: var(--primary-color);
   font-family: Montserrat Alternates;
@@ -87,7 +100,7 @@ export default Vue.extend({
   }
 
   &__display {
-    width: 50%;
+    width: 100%;
     animation: slide-right 1000ms;
     &--alternate {
       animation: slide-left 1000ms;
@@ -163,7 +176,6 @@ export default Vue.extend({
     }
     &__display {
       margin-bottom: 2.5rem;
-      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;

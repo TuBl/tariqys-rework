@@ -12,6 +12,7 @@
         alt:
           'Image showing a simple weather application using Openweathermap API',
       }"
+      :slug="`https://tubi-weather.netlify.app/`"
     ></Project>
     <Project
       :title="`Quantumzero.net`"
@@ -24,6 +25,7 @@
         alt:
           'Image showing a client website quantumzero.net, to demonstrate work for my portofolio',
       }"
+      :slug="`https://quantumzero.net/`"
     ></Project>
     <Project
       :title="`YelpCamp`"
@@ -35,6 +37,7 @@
         alt:
           'Image showing a personal project featuring a Yelp style campsite review website.',
       }"
+      :slug="`https://immense-bayou-20235.herokuapp.com/`"
     ></Project>
     <Project
       :title="`Dev-Connector`"
@@ -47,7 +50,9 @@
         alt:
           'Image showing a personal project Dev-Connector. A social network application for developers',
       }"
+      :slug="`https://agile-temple-78256.herokuapp.com/`"
     ></Project>
+    <Social></Social>
   </div>
 </template>
 

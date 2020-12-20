@@ -35,6 +35,21 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    // https://www.npmjs.com/package/nuxt-fontawesome
+    // 'nuxt-fontawesome',
+    [
+      'nuxt-fontawesome',
+      {
+        component: 'fa-awesome-icon',
+        imports: [
+          // import whole set
+          {
+            set: '@fortawesome/free-brands-svg-icons',
+            icons: ['fab'],
+          },
+        ],
+      },
+    ],
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)

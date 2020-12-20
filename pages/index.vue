@@ -8,6 +8,7 @@
       </h1>
       <h4>Lets Build Something for you</h4>
       <nuxt-link to="/projects" class="container__button">Portofolio</nuxt-link>
+      <Social class="container__icons"></Social>
     </div>
   </section>
 </template>
@@ -105,6 +106,7 @@ export default Vue.extend({})
     }
     &__button {
       padding: 0.8rem;
+      margin-bottom: 1rem;
     }
   }
 }
