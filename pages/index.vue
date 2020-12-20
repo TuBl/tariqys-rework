@@ -45,7 +45,7 @@ export default Vue.extend({})
       font-family: Moul;
       font-style: normal;
       font-weight: normal;
-      font-size: unquote('clamp(1.5rem, 3vw, 4rem)');
+      font-size: unquote('clamp(1.2rem, 2.5vw, 4rem)');
       line-height: 4.75rem;
       letter-spacing: 0.13em;
       margin-top: -5.5rem;
