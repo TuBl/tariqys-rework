@@ -39,7 +39,7 @@
   }
 }
 html {
-  font-family: Montserrat Alternates, 'Source Sans Pro', -apple-system,
+  font-family: 'Inter', Montserrat Alternates, 'Source Sans Pro', -apple-system,
     BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
@@ -48,13 +48,9 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background: #151515;
+  background: var(--bg);
 }
 
-:root {
-  --primary-color: #e64467;
-  --alternate-color: #f46c2d;
-}
 *,
 *::before,
 *::after {
@@ -67,7 +63,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: #fefefe;
+  color: var(--text);
 }
 
 .main__layout {

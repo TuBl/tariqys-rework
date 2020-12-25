@@ -82,7 +82,7 @@ a {
   padding: 0;
 }
 .project {
-  color: var(--primary-color);
+  color: var(--text);
   font-family: Montserrat Alternates;
   margin-bottom: 5rem;
   &__title {
@@ -107,7 +107,7 @@ a {
     }
   }
   &__description {
-    border-left: 5px solid var(--primary-color);
+    border-left: 5px solid var(--alternate-color);
     width: 50%;
     height: auto;
     display: flex;
@@ -122,12 +122,11 @@ a {
       flex-grow: 2;
       margin-block-start: 1em;
       padding-left: 1rem;
-      color: var(--alternate-color);
       animation: slide-left 1000ms;
     }
     &--alternate {
       border-left: none;
-      border-right: 5px solid var(--primary-color);
+      border-right: 5px solid var(--alternate-color);
       p {
         padding-left: 0rem;
         padding-right: 1rem;
@@ -152,7 +151,7 @@ a {
       margin-left: 0rem;
       width: 10rem;
       font-size: unquote('clamp(.8rem, 0.2500rem + 3.3333vw, 1.5rem)');
-      border: 2px solid var(--primary-color);
+      border: 2px solid var(--alternate-color);
       border-radius: 40px;
       animation: slide-left 1000ms;
     }
@@ -183,8 +182,8 @@ a {
     &__description {
       border: none;
       width: 100%;
-      border-top: 5px solid var(--primary-color);
-      border-bottom: 5px solid var(--primary-color);
+      border-top: 5px solid var(--alternate-color);
+      border-bottom: 5px solid var(--alternate-color);
       border-radius: 40px;
       padding: 1rem;
       justify-content: center;

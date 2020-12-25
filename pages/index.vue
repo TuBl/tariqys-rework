@@ -27,7 +27,6 @@ export default Vue.extend({})
   justify-content: space-between;
   align-items: center;
   text-align: justify;
-  color: #e5e5e5;
   &__card {
     display: flex;
     align-items: center;
@@ -42,34 +41,27 @@ export default Vue.extend({})
     flex-direction: column;
     justify-content: space-evenly;
     h1 {
-      font-family: Moul;
-      font-style: normal;
-      font-weight: normal;
+      font-family: 'Inter';
+      font-style: bold;
+      font-weight: bold;
       font-size: unquote('clamp(1.5rem, 3vw, 4rem)');
       line-height: 4.75rem;
       letter-spacing: 0.13em;
       margin-top: -5.5rem;
+      color: var(--text);
       animation: slide-left 1000ms;
     }
     h4 {
       font-size: unquote('clamp(.9rem, 2vw, 2.25rem)');
       line-height: 2.75rem;
       letter-spacing: 0.13em;
+      color: var(--text-alt);
       animation: slide-right 1000ms;
     }
   }
   &__button {
-    background: radial-gradient(
-        84.24% 527.68% at 80% 50.25%,
-        #e64467 0%,
-        rgba(230, 68, 103, 0) 100%,
-        rgba(230, 68, 103, 0.5) 100%
-      ),
-      radial-gradient(
-        50.1% 321.45% at 0% 50.25%,
-        #f46c2d 0%,
-        rgba(244, 108, 45, 0.5) 100%
-      );
+    background: var(--gradient);
+    color: var(--btn-color);
     mix-blend-mode: normal;
     border-radius: 17px;
     width: 100%;

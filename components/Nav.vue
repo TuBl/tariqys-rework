@@ -5,17 +5,24 @@
         <nuxt-link to="/"><li>Home</li></nuxt-link>
         <nuxt-link to="/projects"><li>Projects</li></nuxt-link>
       </ul>
+      <theme-switcher></theme-switcher>
     </nav>
   </header>
 </template>
 
 <script>
-export default {}
+import ThemeSwitcher from './ThemeSwitcher.vue'
+export default {
+  components: { ThemeSwitcher },
+}
 </script>
 
 <style lang="scss" scoped>
 header {
   width: 100%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
 }
 nav {
   display: flex;
@@ -44,6 +51,13 @@ a:active {
   header {
     display: flex;
     justify-content: center;
+  }
+  nav {
+    flex-direction: column;
+    margin-top: 2rem;
+    ul {
+      margin-bottom: 2rem;
+    }
   }
 }
 </style>

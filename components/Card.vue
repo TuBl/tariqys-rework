@@ -34,21 +34,7 @@ export default {}
     top: 10%;
     left: 10%;
     z-index: 0;
-    background: radial-gradient(
-        100% 104.12% at 0% 49.91%,
-        #f46c2d 0%,
-        rgba(245, 110, 40, 0) 100%
-      ),
-      radial-gradient(
-        96% 99.96% at 100% 49.91%,
-        #e64467 0%,
-        rgba(230, 68, 103, 0) 100%
-      ),
-      radial-gradient(
-        97.12% 97.12% at 50% 2.88%,
-        #ffffff 0%,
-        rgba(255, 255, 255, 0) 100%
-      );
+    background: var(--gradient);
   }
   &__overlay {
     height: 100%;
@@ -80,9 +66,9 @@ export default {}
     z-index: 100;
     color: #ffffff;
     opacity: 0.75;
-    font-family: Moul;
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'Inter';
+    font-style: bold;
+    font-weight: bold;
     padding: 0.5rem;
     p {
       letter-spacing: 0.13em;
