@@ -76,7 +76,7 @@ img {
   width: 100%;
 }
 .container {
-  background: #151515;
+  background: var(--switcher-alt);
   height: auto;
   width: 18rem;
   padding: 0.8rem;
@@ -99,21 +99,18 @@ img {
     }
   }
   &__themeswitcher {
-    background: #fefefe;
+    background: var(--switcher-bg);
     margin-left: -3rem;
     height: 3.2rem;
     width: 3.2rem;
     border-radius: 50%;
     transition: margin-left 200ms ease-in;
     &--alt {
-      background: #151515;
       margin-left: 3rem;
       transition: margin-left 200ms ease-in;
     }
   }
-  &--alt {
-    background: #fefefe;
-  }
+
 }
 @media only screen and(max-width: 1440px) {
   img {
