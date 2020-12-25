@@ -23,6 +23,8 @@
   .dark-mode{
     --primary-color: #e64467;
     --alternate-color: #e64467;
+    --sun: #f46c2d;
+    --moon: var(--alternate-color);
     --text: #fefefe;
     --text-alt: #fefefe;
     --bg: #151515;
@@ -47,6 +49,8 @@
   .light-mode{
     --primary-color: #E7877E;
     --alternate-color: #E7877E;
+    --sun: #3dfcef;
+    --moon: var(--alternate-color);
     --text: #151515;  
     --text-alt: rgba(21, 21, 21, .79);  
     --bg: #fefefe;

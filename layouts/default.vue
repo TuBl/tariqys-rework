@@ -48,7 +48,8 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background: var(--bg);
+  background-color: var(--bg);
+  transition: background-color 100ms ease-in;
 }
 
 *,

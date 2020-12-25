@@ -5,6 +5,7 @@
         :icon="['fab', 'github']"
         size="4x"
         class="icon github"
+        :class="this.$colorMode.preference == 'light' ? 'github--alt' : ''"
       ></fa-awesome-icon>
     </a>
 
@@ -71,6 +72,10 @@ export default {
 .github {
   background: white;
   color: #24292e;
+  
+}
+.github--alt{
+  border: 1px solid #24292e;
 }
 .instagram {
   background: linear-gradient(
