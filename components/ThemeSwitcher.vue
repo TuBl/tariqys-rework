@@ -71,8 +71,7 @@
   </section>
 </template>
 
-<script lang="ts">
-type Theme = 'light' | 'dark'
+<script>
 export default {
   data() {
     return {
@@ -80,7 +79,7 @@ export default {
     }
   },
   methods: {
-    switchtheme(theme: Theme) {
+    switchtheme(theme) {
       theme === 'light'
         ? ((this.$colorMode.preference = 'light'), (this.light = true))
         : ((this.$colorMode.preference = 'dark'), (this.light = false))
