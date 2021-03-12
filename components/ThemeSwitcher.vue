@@ -45,7 +45,7 @@
         <defs>
           <filter id="f2" x="0" y="0" width="100%" height="100%">
             <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0" />
-            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="2" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
             <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
           </filter>
         </defs>

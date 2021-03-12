@@ -19,7 +19,10 @@
       #e74868 100%
     );
   --font-primary: 'Inter';
-
+  --blog-primary: #E64467;
+  --blog-alternate: #fefefe;
+  --blog-dark--primary:  #F46C2D;
+  --blog-dark--alternate: #151515;
 
   }
 

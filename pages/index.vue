@@ -70,7 +70,7 @@ export default Vue.extend({})
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: Moul;
+    font-family: Inter;
     font-style: normal;
     font-weight: normal;
     font-size: unquote('clamp(1rem, 3.5vw, 3rem)');

@@ -9,8 +9,8 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     htmlAttrs: {
-      lang: 'en'
-    }
+      lang: 'en',
+    },
   },
   // progress bar
   loading: {
@@ -54,6 +54,8 @@ export default {
         ],
       },
     ],
+    // nuxt content for blog
+    '@nuxt/content',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)

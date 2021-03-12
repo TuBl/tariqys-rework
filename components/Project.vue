@@ -113,7 +113,7 @@ a {
     display: flex;
     flex-direction: column;
     p {
-      font-family: Moul;
+      font-family: Inter;
       font-style: normal;
       font-weight: normal;
       line-height: 3rem;
