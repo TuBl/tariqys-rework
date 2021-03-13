@@ -92,8 +92,8 @@ export default Vue.extend({
 <style lang="scss" scoped>
 h2 {
   font-weight: 300;
-  font-size: calc(1rem + (2.875 - 1) * (100vw - 30rem) / (123.75 - 30));
-  letter-spacing: 0rem;
+  font-size: calc(1rem + (2.425 - 1) * (100vw - 30rem) / (123.75 - 30));
+  letter-spacing: -0.1rem;
 }
 
 p,
@@ -213,6 +213,9 @@ a {
   transition: transform 100ms ease-in-out;
 }
 @media only screen and(max-width: 768px) {
+  h2 {
+    letter-spacing: 0rem;
+  }
   .post {
     border-top-left-radius: 1.2rem;
     border-top-right-radius: 1.2rem;
