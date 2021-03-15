@@ -6,7 +6,7 @@
       :title="article.title"
       :abstract="article.description"
       :duration="article.duration"
-      :date="article.date"
+      :date="article.updatedAt"
       :category="article.category"
       :author="article.author"
       :info1="article.info1"

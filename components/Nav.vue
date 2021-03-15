@@ -6,15 +6,15 @@
         <nuxt-link to="/projects"><li>Projects</li></nuxt-link>
         <nuxt-link to="/blog"><li>Blog</li></nuxt-link>
       </ul>
-      <theme-switcher></theme-switcher>
+      <toggle></toggle>
     </nav>
   </header>
 </template>
 
 <script>
-import ThemeSwitcher from './ThemeSwitcher.vue'
+import Toggle from './Toggle.vue'
 export default {
-  components: { ThemeSwitcher },
+  components: { Toggle },
 }
 </script>
 

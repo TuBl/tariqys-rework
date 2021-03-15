@@ -6,7 +6,7 @@
         <h2>{{ title }}</h2>
         <div class="post__captions">
           <span>{{ duration }}</span>
-          <span>{{ date }}</span>
+          <span>{{ formatDate(date) }}</span>
         </div>
         <div class="post__abstract">
           <p>
@@ -41,7 +41,7 @@
   </nuxt-link>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
 export default Vue.extend({
   props: {
@@ -84,6 +84,12 @@ export default Vue.extend({
     slug: {
       type: String,
       required: true,
+    },
+  },
+  methods: {
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('en', options)
     },
   },
 })

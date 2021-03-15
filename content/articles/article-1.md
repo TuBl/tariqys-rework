@@ -8,9 +8,10 @@ category: Front End
 info1: Vector based design tool
 info2: Adobe
 info3: V.36.1
+image: article-1-hero.jpg
 ---
 <!--more-->
-![Blog post hero section](/_nuxt/assets/blog/article-1/blog-template.jpg)
+<!-- ![Blog post hero section](/_nuxt/assets/blog/article-1/blog-template.jpg) -->
 
 # How to make full-screen hero video - the easy way
 
@@ -50,7 +51,7 @@ http.createServer((req, res) => {
 
 
 - Lol
-- Dota
+- Dotaaaaa
   - Under Lords
   - Card game
   > swag 
