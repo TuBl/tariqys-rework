@@ -1,12 +1,25 @@
 <template>
   <div class="container">
     <Project
+      :title="`Rick and morty Application`"
+      :description="`This was a test for a a job application that I had. It was one of the most interesting and educational assignments
+      that I ever had, I got to play around with Docker, Google Kuberbetes Engine and many more interesting technologies`"
+      :tags="['React', 'Docker', 'GKE', 'GraphQL']"
+      :image="{
+        src: 'project5.png',
+        alt:
+          'Image showing a rick & morty application using rickandmortyapi.com',
+      }"
+      :slug="`http://34.67.79.233/`"
+    ></Project>
+    <Project
       :title="`Weather Application`"
       :description="`I used this application in order to practice animating SVG images. The
           application utilizes openweathermap API to provide accurate weather
           conditions. the front-end vue application renders different animated
           illustration based on the weather.`"
       :tags="['Vue', 'SaaS', 'SVG']"
+      :alternate="true"      
       :image="{
         src: 'project1.png',
         alt:
@@ -19,7 +32,6 @@
       :description="`QuantumZero Inc is an organization located in dubai, UAE. they specialize in building gaming and workstations to order.
        this project included designing and building their company website.`"
       :tags="['Vue', 'SaaS', 'Bluehost']"
-      :alternate="true"
       :image="{
         src: 'project2.png',
         alt:
@@ -32,6 +44,7 @@
       :description="`My first functional project ever! Using EJS templates, NodeJS, MongoDB to deliver Campsites review website with Registration, Logins, posts, comments and more!.
        I like to look at it to see how far I've come since I began this journey.`"
       :tags="['HTML', 'CSS', 'Mongo', 'ExpressJS', 'NodeJS', 'EJS']"
+      :alternate="true"
       :image="{
         src: 'project3.png',
         alt:
@@ -44,13 +57,25 @@
       :description="`Personal Project: A social network web app with signup, 
       login, personal profiles, posts, comments, feed, like and unlike system and more.`"
       :tags="['MERN', 'Redux', 'Heroku']"
-      :alternate="true"
       :image="{
         src: 'project4.png',
         alt:
           'Image showing a personal project Dev-Connector. A social network application for developers',
       }"
       :slug="`https://agile-temple-78256.herokuapp.com/`"
+    ></Project>
+    <Project
+      :title="`Design portofolio`"
+      :description="`Collection of website designs that I have worked on for clients, these were done in Figma, utilizing resources like patternpad,
+      adobe colors, coolor and many more!`"
+      :tags="['Figma', 'Coolors']"
+      :alternate="true"
+      :image="{
+        src: 'project6.png',
+        alt:
+          'Image showing a personal project Dev-Connector. A social network application for developers',
+      }"
+      :slug="`https://docs.google.com/document/d/113T3qKyADpXJBQZqN1sSOfCj-3Ux6EZkIuuWF2q21EU/edit?usp=sharing`"
     ></Project>
     <Social></Social>
   </div>

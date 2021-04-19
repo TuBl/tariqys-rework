@@ -116,8 +116,8 @@ a {
       font-family: Inter;
       font-style: normal;
       font-weight: normal;
-      line-height: 3rem;
-      font-size: unquote('clamp(1.4rem, 2.5vw, 1.7rem)');
+      line-height: 2.5rem;
+      font-size: unquote('clamp(1.2rem, 2.5vw, 1.4rem)');
       text-align: justify;
       flex-grow: 2;
       margin-block-start: 1em;
